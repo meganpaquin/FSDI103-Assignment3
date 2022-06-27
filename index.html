@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculator</h1>
+        <p>Select the plus, minus, multiply, or divide button to see your calcuation.</p>
+    </header>
+
+    <table id="calculator">
+        <th>
+            <td id="answer" colspan="4"></td>
+        </th>
+        <tr>
+            <td><button onclick="sevenclick()">7</button></td>
+            <td><button onclick="eightclick()">8</button></td>
+            <td><button onclick="nineclick()">9</button></td>
+            <td><button onclick="plusclick()">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="fourclick()">4</button></td>
+            <td><button onclick="fiveclick()">5</button></td>
+            <td><button onclick="sixclick()">6</button></td>
+            <td><button id="minus" onclick="minusclick()">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="oneclick()">1</button></td>
+            <td><button onclick="twoclick()">2</button></td>
+            <td><button onclick="threeclick()">3</button></td>
+            <td><button id="multiply" onclick="multiplyclick()">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="zeroclick()">0</button></td>
+            <td><button onclick="decimalclick()">.</button></td>
+            <td><button id="exponent" onclick="exponentclick()">EXP</button></td>
+            <td><button id="divide" onclick="divideclick()">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="negate" onclick="negateclick()">+/-</button></td>
+            <td><button id="round"onclick="roundclick()">RND</button></td>
+            <td><button onclick="clearclick()">AC</button></td>
+            <td><button id="equal" onclick="equalclick()">=</button></td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
